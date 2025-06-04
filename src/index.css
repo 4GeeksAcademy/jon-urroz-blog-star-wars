@@ -1,0 +1,78 @@
+.styled-card{
+    flex-shrink: 0;
+    width: 18rem;
+    object-fit: cover;
+}
+
+body {
+background: radial-gradient(circle at top left, #440000, #000000);
+color: #e8dd08 !important;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+min-height: 100vh;
+margin: 0;
+padding: 0;
+}
+
+.section-title {
+font-size: 2rem;
+font-weight: bold;
+color: #ffe81f;
+text-shadow: 0 0 5px #ffe81f, 0 0 10px #000;
+border-bottom: 2px solid #ffe81f;
+padding-bottom: 0.5rem;
+margin-bottom: 1rem;
+}
+
+.card.styled-card {
+background-color: rgba(0, 0, 0, 0.75);
+color: white;
+border: none;
+box-shadow: 0 4px 12px rgba(255, 232, 31, 0.4);
+min-width: 18rem;
+max-width: 18rem;
+flex-shrink: 0;
+transition: transform 0.2s ease;
+}
+
+.card.styled-card:hover {
+transform: translateY(-5px);
+}
+
+.card-img-top {
+height: 200px;
+object-fit: cover;
+}
+
+.btn.btn-primary {
+background-color: #ffe81f;
+color: #000;
+border: none;
+}
+
+.btn.btn-primary:hover {
+background-color: #fff36f;
+color: #000;
+}
+
+.scroll-wrapper {
+display: flex;
+overflow-x: auto;
+gap: 1rem;
+padding-bottom: 1rem;
+}
+
+.navbar-logo {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navbar-logo {
+    background-color: #000;
+}
+
+.page-card {
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+}

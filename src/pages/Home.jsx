@@ -1,16 +1,30 @@
-import rigoImageUrl from "../assets/img/rigo-baby.jpg";
-import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
+import CharacterCard from '../components/CharacterCard';
+import PlanetsCard from '../components/PlantesCard';
+import VehiclesCard from '../components/VehiclesCard';
 
-export const Home = () => {
+function Home() {
+  return (
+    <div className="container py-5">
+      <section className="mb-5">
+        <h2 className="mb-3 border-bottom pb-2">Personajes</h2>
+        <div className="d-flex gap-3 overflow-auto">
+          <CharacterCard />
+        </div>
+      </section>
+      <section className="mb-5">
+        <h2 className="mb-3 border-bottom pb-2">Planetas</h2>
+        <div className="d-flex gap-3 overflow-auto">
+          <PlanetsCard />
+        </div>
+      </section>
+      <section className="mb-5">
+        <h2 className="mb-3 border-bottom pb-2">Vehículos</h2>
+        <div className="d-flex gap-3 overflow-auto">
+          <VehiclesCard />
+        </div>
+      </section>
+    </div>
+  );
+}
 
-  const {store, dispatch} =useGlobalReducer()
-
-	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!!</h1>
-			<p>
-				<img src={rigoImageUrl} />
-			</p>
-		</div>
-	);
-}; 
+export default Home;
